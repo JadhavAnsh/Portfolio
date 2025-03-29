@@ -10,21 +10,21 @@ const Navbar = () => {
 
       {/* Navigation Links */}
       <div className="flex items-center gap-7 ml-auto">
-        <Link to="/" className="text-black text-lg font-light font-[Poppins]">
+        <Link to="/" className="text-black text-[20px] text-lg font-light font-[Poppins]">
           Home
         </Link>
-        <Link to="/about" className="text-black text-lg font-light font-[Poppins]">
+        <Link to="/about" className="text-black text-[20px] text-lg font-light font-[Poppins]">
           About Me
         </Link>
-        <Link to="/projects" className="text-black text-lg font-light font-[Poppins]">
+        <Link to="/projects" className="text-black text-[20px] text-lg font-light font-[Poppins]">
           Projects
         </Link>
-        <Link to="/experience" className="text-black text-lg font-light font-[Poppins]">
+        <Link to="/experience" className="text-black text-[20px] text-lg font-light font-[Poppins]">
           Experience
         </Link>
 
         {/* Start a Project Button */}
-        <button className="px-4 py-2 bg-gradient-to-r from-blue-400 to-indigo-700 rounded-lg shadow-md text-white text-lg font-medium">
+        <button className="px-4 py-2 bg-gradient-to-br from-blue-400 to-indigo-700 rounded-lg shadow-md text-white text-lg font-medium">
           Start a Project
         </button>
       </div>
