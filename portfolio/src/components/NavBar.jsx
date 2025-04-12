@@ -1,34 +1,33 @@
-import { Link } from "react-router-dom";
+import React from 'react';
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center py-4 px-10 bg-white shadow-md">
-      {/* Logo */}
-      <div className="text-black text-[34px] font-medium font-[Inknut_Antiqua]">
-        Ansh Jadhav
-      </div>
+    <div className="fixed top-6 w-full flex justify-center z-50">
+      <div className="bg-white backdrop-blur-md rounded-full px-3 py-2 inline-flex items-center justify-center shadow-md">
+        {/* Content: Logo + Links + Button */}
+        <div className="flex items-center space-x-4">
+          {/* Logo */}
+          <div className="text-black font-extrabold text-xl tracking-wide" style={{ fontFamily: 'Arial Black, sans-serif' }}>
+            Ansh Jadhav
+          </div>
 
-      {/* Navigation Links */}
-      <div className="flex items-center gap-7 ml-auto">
-        <Link to="/" className="text-black text-[20px] text-lg font-light font-[Poppins]">
-          Home
-        </Link>
-        <Link to="/about" className="text-black text-[20px] text-lg font-light font-[Poppins]">
-          About Me
-        </Link>
-        <Link to="/projects" className="text-black text-[20px] text-lg font-light font-[Poppins]">
-          Projects
-        </Link>
-        <Link to="/experience" className="text-black text-[20px] text-lg font-light font-[Poppins]">
-          Experience
-        </Link>
+          {/* Nav Links */}
+          <nav className="flex items-center space-x-6 text-black font-medium text-sm">
+            <a href="#services" className="hover:text-gray-700 no-underline">About</a>
+            <a href="#work" className="hover:text-gray-700 no-underline">Projects</a>
+            <a href="#about" className="hover:text-gray-700 no-underline">Experince</a>
+          </nav>
 
-        {/* Start a Project Button */}
-        <button className="px-4 py-2 bg-gradient-to-br from-blue-400 to-indigo-700 rounded-lg shadow-md text-white text-lg font-medium">
-          Start a Project
-        </button>
+          {/* Button */}
+          <a
+            href="#start"
+            className="bg-black text-white px-4 py-1.5 rounded-full font-semibold text-sm hover:bg-gray-900 transition no-underline"
+          >
+            Start a Project
+          </a>
+        </div>
       </div>
-    </nav>
+    </div>
   );
 };
 
